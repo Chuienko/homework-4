@@ -199,8 +199,10 @@ margin-right: 30px;
 /* --  hero -- */
 .hero {
   background: var(--color-backgroutd);
+  min-width: 1600px;
   background-position: center;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: 1600px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -239,6 +241,7 @@ margin-right: 30px;
 .hero-btn:focus {
   background-color: var(--color-btn);
   color: var(--accent-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 /* --  Benefits about -- */
 
@@ -451,7 +454,13 @@ margin-right: 0;} */
   border-right: 1px solid var(--border-color);
   padding: 20px 24px;
 }
+.portfolio-item:hover,
+.portfolio-item:focus,
+.text-btn:focus,
+.text-btn:hover
+{box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
+}
 .portfolio-item-title {
   margin-bottom: 4px;
   font-weight: 700;
